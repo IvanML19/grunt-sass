@@ -1,0 +1,59 @@
+@import "globals";
+
+body {
+	background: $websiteWhite;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+div.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+nav {
+	background-color: $navbarBlue;
+
+	ul {
+		margin:0;
+		padding: 0;
+		list-style-type: none;
+		display: block;
+
+		li {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			display: inline-block; 
+
+			a {
+				color: $websiteWhite;
+				text-decoration: none;
+				font-weight: 400;
+				padding: 10px;
+				display: block;
+				font-size: $bodyFont;
+				&:hover {
+					opacity: .5;
+				}
+			}
+		}
+	}
+}
+
+div.box {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	&.one {
+		background: red;
+	}
+	&.two {
+		background: green;
+	}
+	&.three {
+		background: yellow;
+	}
+}
